@@ -1,0 +1,26 @@
+{
+  "name": "testes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.1.5",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "jest": "^25.2.7",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.1",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "pretest": "NODE_ENV=test sequelize db:migrate",
+    "test": "NODE_ENV=test jest",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "sequelize": "^5.21.5"
+  }
+}

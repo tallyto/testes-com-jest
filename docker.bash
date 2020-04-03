@@ -1,0 +1,1 @@
+sudo docker run --name postgres-test -e POSTGRES_PASSWORD=docker -p 5432:5432 -d -t postgres 
